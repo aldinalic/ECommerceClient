@@ -2,11 +2,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>JSP - Hello World</title>
+    <title>Search for Customer</title>
 </head>
 <body>
-<h1><%= "Hello World!" %></h1>
-<br/>
-<a href="hello-servlet">Hello Servlet</a>
+
+<form method="post" action="searchCustomer">
+
+    <label for="id">Insert id</label>
+    <input id="id" name="id" type="number" min="0" required>
+    <br />
+
+    <button type="submit">Search</button>
+
+</form>
+
 </body>
 </html>

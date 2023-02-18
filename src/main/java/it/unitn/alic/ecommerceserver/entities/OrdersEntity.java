@@ -3,7 +3,7 @@ package it.unitn.alic.ecommerceserver.entities;
 import java.io.Serializable;
 import java.util.Objects;
 
-public class OrderEntity implements Serializable {
+public class OrdersEntity implements Serializable {
 
     private CustomerEntity customer;
     private ProductEntity product;
