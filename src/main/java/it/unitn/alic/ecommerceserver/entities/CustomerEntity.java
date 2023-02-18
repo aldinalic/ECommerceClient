@@ -1,7 +1,6 @@
 package it.unitn.alic.ecommerceserver.entities;
 
 import java.io.Serializable;
-import java.util.List;
 import java.util.Objects;
 
 public class CustomerEntity implements Serializable {
@@ -11,6 +10,8 @@ public class CustomerEntity implements Serializable {
     private String password;
     private String email;
     private String address;
+
+    private boolean loggedIn;
 
     public CustomerEntity() {
     }
@@ -57,6 +58,14 @@ public class CustomerEntity implements Serializable {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public boolean isLoggedIn() {
+        return loggedIn;
+    }
+
+    public void setLoggedIn(boolean loggedIn) {
+        this.loggedIn = loggedIn;
     }
 
     @Override

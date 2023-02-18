@@ -7,7 +7,6 @@ public class OrdersEntity implements Serializable {
 
     private CustomerEntity customer;
     private ProductEntity product;
-
     private int amount;
     private String shipping_address;
     private String status;
